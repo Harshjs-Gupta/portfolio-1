@@ -72,8 +72,8 @@ const Home = () => {
 
           <div className="flex gap-[70px] font-[700] uppercase tracking-[0.05em] items-center justify-center mx-[-40px] sm:mx-0 sm:justify-start">
             <a
-              href="https://drive.google.com/uc?export=download&id=1Fz9PbSMnIC7HTAvWxw6rSwqIg6D_UNZ-"
-              download="ResumeOfImanKhaki.pdf"
+              href="/HarshGuptaResume.pdf"
+              download="ResumeOfHarshGupta.pdf"
               target="_blank"
               className='text-titleColor dark:text-titleColorDark text-tiny grid place-items-center border-[2px] border-solid border-borderColor dark:border-borderColorDark p-[20px] rounded-[56px] shadow-[5px_5px_rgba(0,0,0,0.2)] dark:shadow-[5px_5px_rgba(255,255,255,0.1)] relative before:content-[""] before:absolute before:inset-[2px] before:bg-primaryColor before:rounded-[56px] before:scale-[0.3] before:blur-[10px] before:opacity-0 before:transition-all before:duration-[0.6s] before:ease-[cubic-bezier(0.3,0,0.3,1)] before:z-[0] hover:before:scale-[1] hover:before:blur-0 hover:before:opacity-100'
             >
