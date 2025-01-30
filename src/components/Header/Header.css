@@ -2,24 +2,24 @@
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 30px;
+  padding: 20px 30px 20px 30px;
   z-index: 100;
 }
 
 .scroll-header {
-    position: fixed;
-    background-color: hsl(213, 10%, 21%);
-    animation: header_animate 0.8s cubic-bezier(0.3, 0, 0.3, 1) 0s forwards;
+  position: fixed;
+  background-color: hsl(213, 10%, 21%);
+  animation: header_animate 0.8s cubic-bezier(0.3, 0, 0.3, 1) 0s forwards;
 }
 
 @keyframes header_animate {
-    0% {
-        transform: translateY(-100px);
-    }
+  0% {
+    transform: translateY(-100px);
+  }
 
-    100% {
-        transform: translateY(0px);
-    }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .nav {
@@ -71,11 +71,11 @@
 }
 
 .nav__link__dark {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
 
 .active,
@@ -120,19 +120,15 @@
 }
 
 .nav__toggle span:last-child {
-    bottom: 8px;
+  bottom: 8px;
 }
 
 .animate-toggle span:first-child {
-    transform: rotate(-45deg);
-    top: 14px;
+  transform: rotate(-45deg);
+  top: 14px;
 }
 
 .animate-toggle span:last-child {
-    transform: rotate(45deg);
-    top: 14px;
+  transform: rotate(45deg);
+  top: 14px;
 }
-
-
-
-

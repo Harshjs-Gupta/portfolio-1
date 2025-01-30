@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { links } from '../../Data';
-import { Link, animateScroll } from 'react-scroll';
-import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+import React, { useState, useEffect } from "react";
+import { links } from "../../Data";
+import { Link, animateScroll } from "react-scroll";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
-import {
-  FaTwitter,
-  FaInstagram,
-  FaTelegram,
-  FaFacebookSquare,
-  FaYoutube,
-  FaGithub,
-  FaEnvelope,
-} from 'react-icons/fa';
-import { BsMoon, BsSun } from 'react-icons/bs';
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { BsMoon, BsSun } from "react-icons/bs";
 
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,31 +26,31 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    window.addEventListener("scroll", changeNav);
   }, []);
 
   useEffect(() => {
-    document.body.classList.toggle('no-scroll', showMenu);
+    document.body.classList.toggle("no-scroll", showMenu);
   }, [showMenu]);
 
   // Icons
-  const sunIcon = document.querySelector('.sun');
-  const moonIcon = document.querySelector('.moon');
+  const sunIcon = document.querySelector(".sun");
+  const moonIcon = document.querySelector(".moon");
 
   //Theme Vars
-  const userTheme = localStorage.getItem('theme');
-  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const userTheme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   // Icon Toggling
   const iconToggle = () => {
-    moonIcon.classList.toggle('display-none');
-    sunIcon.classList.toggle('display-none');
+    moonIcon.classList.toggle("display-none");
+    sunIcon.classList.toggle("display-none");
   };
 
   // Initial Theme check
   const themeCheck = () => {
-    if (userTheme === 'dark' || (!userTheme && systemTheme)) {
-      document.documentElement.classList.add('dark');
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+      document.documentElement.classList.add("dark");
       // moonIcon.classList.add('display-none');
       return;
     }
@@ -67,15 +59,15 @@ const Header = () => {
 
   // Manual Theme Switch
   const themeSwitch = () => {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
       iconToggle();
       return;
     }
 
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
     iconToggle();
   };
 
@@ -89,33 +81,33 @@ const Header = () => {
   return (
     <header
       className={`${
-        scrollNav ? 'scroll-header' : ''
+        scrollNav ? "scroll-header" : ""
       } header bg-bgColor dark:bg-bgColorDark`}
     >
-      <nav className='nav'>
+      <nav className="nav">
         <Link
-          to='/'
+          to="/"
           onClick={scrollTop}
-          className='nav__logo capitalize tracking-[0.05em] dark:text-titleColorDark text-titleColor'
+          className="nav__logo capitalize tracking-[0.05em] dark:text-titleColorDark text-titleColor"
         >
           My Portfolio
         </Link>
         <div
           className={`${
-            showMenu ? 'nav__menu show-menu' : 'nav__menu'
+            showMenu ? "nav__menu show-menu" : "nav__menu"
           } bg-bgColor dark:bg-bgColorDark `}
         >
-          <div className='nav__data'>
+          <div className="nav__data">
             {/* Menu Items */}
-            <ul className='nav__list'>
+            <ul className="nav__list">
               {links.map(({ name, path }, index) => {
                 return (
-                  <li className='nav__item' key={index}>
+                  <li className="nav__item" key={index}>
                     <Link
                       className={`${
-                        document.documentElement.classList.contains('dark')
-                          ? 'nav__link__dark'
-                          : 'nav__link'
+                        document.documentElement.classList.contains("dark")
+                          ? "nav__link__dark"
+                          : "nav__link"
                       } uppercase tracking-[0.05em]`}
                       to={path}
                       spy={true}
@@ -132,64 +124,41 @@ const Header = () => {
               })}
             </ul>
             {/* Menu Social Buttons */}
-            <div className='flex gap-[20px] mb-[30px] '>
+            <div className="flex gap-[20px] mb-[30px] ">
               <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
+                href="#"
+                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
                 <FaTwitter />
               </a>
               <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
+                href="#"
+                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
-                <FaFacebookSquare />
+                <FaLinkedin />
               </a>
+
               <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
+                href="#"
+                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
                 <FaGithub />
-              </a>
-              <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
-              >
-                <FaTelegram />
-              </a>
-              <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
-              >
-                <FaYoutube />
-              </a>
-              <a
-                href='#'
-                className='text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce'
-              >
-                <FaEnvelope />
               </a>
             </div>
           </div>
         </div>
-        <div className='nav__btns'>
-          <div className='theme_toggler text-textColor dark:text-textColorDark'>
+        <div className="nav__btns">
+          <div className="theme_toggler text-textColor dark:text-textColorDark">
             <BsMoon
-              className='moon cursor-pointer w-5 h-5'
-              id='moon'
+              className="moon cursor-pointer w-5 h-5"
+              id="moon"
               onClick={() => {
                 themeSwitch();
               }}
             />
             <BsSun
-              className='sun cursor-pointer w-5 h-5 display-none'
-              id='sun'
+              className="sun cursor-pointer w-5 h-5 display-none"
+              id="sun"
               onClick={() => {
                 themeSwitch();
               }}
@@ -198,12 +167,12 @@ const Header = () => {
 
           <div
             className={`${
-              showMenu ? 'nav__toggle animate-toggle' : 'nav__toggle'
+              showMenu ? "nav__toggle animate-toggle" : "nav__toggle"
             }  `}
             onClick={() => setShowMenu(!showMenu)}
           >
-            <span className='bg-textColor dark:bg-textColorDark'></span>
-            <span className='bg-textColor dark:bg-textColorDark'></span>
+            <span className="bg-textColor dark:bg-textColorDark"></span>
+            <span className="bg-textColor dark:bg-textColorDark"></span>
           </div>
         </div>
       </nav>
