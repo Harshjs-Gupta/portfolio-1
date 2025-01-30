@@ -1,4 +1,4 @@
-import ezzyShop from "./assets/ezzyShop.png";
+import ezzyShop from "./assets/ezzyshop.png";
 import pixelMind from "./assets/pixelMind1.png";
 import chattify from "./assets/chattify.png";
 import portfolio from "./assets/portfolio.png";
