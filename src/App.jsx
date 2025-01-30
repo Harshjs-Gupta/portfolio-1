@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Notification from "./components/toastifyNotification/notification";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Resume />
       <Contact />
       <Footer />
+      <Notification />
     </main>
   );
 };
