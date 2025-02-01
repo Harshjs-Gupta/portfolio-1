@@ -11,6 +11,7 @@ import gsap from "../public/gsap.svg";
 import react from "../public/react.svg";
 import sass from "../public/sass.svg";
 import git from "../public/git.svg";
+import github from "../public/github.svg";
 import redux from "../public/redux.svg";
 import figma from "../public/figma.svg";
 import typescript from "../public/typescript1.svg";
@@ -111,26 +112,24 @@ export const feSkills = [
     name: "Tailwind CSS",
     svg: tailwind,
   },
-
   {
     id: 7,
-    name: "Git",
-    svg: git,
-  },
-
-  {
-    id: 8,
     name: "Sass",
     svg: sass,
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Redux",
     svg: redux,
   },
+  {
+    id: 9,
+    name: "GSAP",
+    svg: gsap,
+  },
   // {
-  //   id: 6,
+  //   id: 10,
   //   name: "TypeScript",
   //   svg: typescript,
   // },
@@ -146,12 +145,17 @@ export const userInterface = [
 
 export const tools = [
   {
-    id: 2,
+    id: 1,
     name: "Git",
     svg: git,
   },
   // {
-  //   id: 1,
+  //   id: 2,
+  //   name: "Github",
+  //   svg: github,
+  // },
+  // {
+  //   id: 3,
   //   name: "Visual Studio Code",
   //   // svg: vsCode
   // },
