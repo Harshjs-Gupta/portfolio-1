@@ -150,14 +150,14 @@ const Header = () => {
         <div className="nav__btns">
           <div className="theme_toggler text-textColor dark:text-textColorDark">
             <BsMoon
-              className="moon cursor-pointer w-5 h-5"
+              className="w-5 h-5 cursor-pointer moon"
               id="moon"
               onClick={() => {
                 themeSwitch();
               }}
             />
             <BsSun
-              className="sun cursor-pointer w-5 h-5 display-none"
+              className="w-5 h-5 cursor-pointer sun display-none"
               id="sun"
               onClick={() => {
                 themeSwitch();

@@ -21,10 +21,6 @@ export const links = [
     path: "home",
   },
   {
-    name: "Services",
-    path: "services",
-  },
-  {
     name: "Skills",
     path: "skills",
   },

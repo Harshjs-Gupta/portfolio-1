@@ -17,12 +17,10 @@ const App = () => {
       <Home />
       <Skills />
       <Projects />
-      {/* <Services /> */}
       <Resume />
       <Contact />
       <Footer />
       <Notification />
-      {/* <video src="" auto ></video> */}
     </main>
   );
 };
