@@ -2,6 +2,18 @@ import ezzyShop from "./assets/ezzyshop.png";
 import pixelMind from "./assets/pixelMind1.png";
 import chattify from "./assets/chattify.png";
 import portfolio from "./assets/portfolio.png";
+import html from "../public/html.svg";
+import css from "../public/css.svg";
+import tailwind from "../public/tailwind.svg";
+import JavaScript from "../public/javascript.svg";
+import next from "../public/next.svg";
+import gsap from "../public/gsap.svg";
+import react from "../public/react.svg";
+import sass from "../public/sass.svg";
+import git from "../public/git.svg";
+import redux from "../public/redux.svg";
+import figma from "../public/figma.svg";
+import typescript from "../public/typescript1.svg";
 
 export const links = [
   {
@@ -68,101 +80,90 @@ export const service = [
   },
 ];
 
-export const skill = [
+export const feSkills = [
   {
     id: 1,
     name: "HTML5",
-    percentage: 99,
-    description:
-      "Hypertext Markup Language (HTML) is the standard markup language used to create web pages and web applications.",
+    svg: html,
   },
-
   {
     id: 2,
-    name: "JavaScript",
-    percentage: 90,
-    description:
-      "JavaScript is a scripting language used for creating dynamic web pages and web applications.",
+    name: "CSS3",
+    svg: css,
   },
 
   {
     id: 3,
-    name: "React.js",
-    percentage: 85,
-    description:
-      "A popular JavaScript library for building user interfaces, React is used to create dynamic and responsive web applications.",
+    name: "JavaScript",
+    svg: JavaScript,
   },
 
   {
     id: 4,
-    name: "Next.js",
-    percentage: 75,
-    description:
-      "Next.js is a React-based framework for building server-side rendered and statically generated web applications.",
+    name: "React.js",
+    svg: react,
   },
 
   {
     id: 5,
-    name: "TypeScript",
-    percentage: 75,
-    description:
-      "TypeScript is a superset of JavaScript that adds optional static typing and other features to the language.",
+    name: "Next.js",
+    svg: next,
   },
 
   {
     id: 6,
     name: "Tailwind CSS",
-    percentage: 80,
-    description:
-      "Tailwind CSS is a utility-first CSS framework that provides developers with a set of pre-built CSS classes for styling web applications.",
+    svg: tailwind,
   },
 
   {
     id: 7,
     name: "Git",
-    percentage: 80,
-    description:
-      "Git is a widely used version control system that is essential for collaborative development and project management. ",
+    svg: git,
   },
+
   {
     id: 8,
-    name: "RESTful API",
-    percentage: 90,
-    description:
-      "RESTful API is an interface that two computer systems use to exchange information securely over the internet.",
+    name: "Sass",
+    svg: sass,
   },
 
   {
     id: 9,
-    name: "Sass",
-    percentage: 75,
-    description:
-      "Sass is a CSS preprocessor that allows developers to write CSS in a more concise and structured way.",
-  },
-
-  {
-    id: 10,
-    name: "Framer Motion",
-    percentage: 85,
-    description:
-      "Framer Motion is a popular Animation library that provides developers a lost of animations and transitions to enhance the user experience.",
-  },
-
-  {
-    id: 11,
     name: "Redux",
-    percentage: 80,
-    description:
-      "Redux is a predictable state container for JavaScript apps, used to manage the state of complex applications.",
+    svg: redux,
   },
+  // {
+  //   id: 6,
+  //   name: "TypeScript",
+  //   svg: typescript,
+  // },
+];
 
+export const userInterface = [
   {
-    id: 12,
-    name: "Zustand",
-    percentage: 85,
-    description:
-      "Zustand is a small, fast and scalable status management solution. Its state management is centralized and action-based.",
+    id: 1,
+    name: "Figma",
+    svg: figma,
   },
+];
+
+export const tools = [
+  {
+    id: 2,
+    name: "Git",
+    svg: git,
+  },
+  // {
+  //   id: 1,
+  //   name: "Visual Studio Code",
+  //   // svg: vsCode
+  // },
+  // {
+  //   id: 3,
+  //   name: "Github",
+  //   svg: github,
+  // },
 ];
 
 export const project = [
@@ -250,42 +251,5 @@ export const cv = [
     description:
       "I have completed several online courses on web development and design, including courses on React.js, Next.js, and JavaScript.",
     category: "education",
-  },
-
-  {
-    id: 5,
-    title: "Fresher",
-    subtitle: "Frontend Developer",
-    date: "2022 - PRESENT",
-    description:
-      " I am currently working as a frontend developer, where I am responsible for developing and maintaining websites using React.js, Next.js, and other frontend technologies.",
-    category: "experience",
-  },
-
-  {
-    id: 6,
-    title: "Coming Soon...",
-    subtitle: "Coming Soon...",
-    date: "000 - 0000",
-    description: "Coming Soon....",
-    category: "experience",
-  },
-
-  {
-    id: 7,
-    title: "Coming Soon...",
-    subtitle: "Coming Soon...",
-    date: "000 - 0000",
-    description: "Coming Soon....",
-    category: "experience",
-  },
-
-  {
-    id: 8,
-    title: "Coming Soon...",
-    subtitle: "Coming Soon...",
-    date: "000 - 0000",
-    description: "Coming Soon....",
-    category: "experience",
   },
 ];

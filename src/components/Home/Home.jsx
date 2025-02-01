@@ -42,11 +42,7 @@ const Home = () => {
 
           <p className="text-large max-w-[520px] my-[40px] leading-[1.7] text-textColor dark:text-textColorDark font-[Comfortaa] font-[700] flex items-center text-center sm:text-left">
             I am a frontend developer with a passion for creating
-            high-performance and visually appealing user interfaces. I am eager
-            to explore full-time opportunities in frontend development. My
-            experience spans various projects, showcasing my ability to build
-            engaging web applications using modern technologies while
-            continuously expanding my skill set.
+            high-performance and visually appealing user interfaces.
           </p>
 
           <div className="flex gap-[20px] mb-[30px] justify-center sm:justify-start">
@@ -94,7 +90,7 @@ const Home = () => {
         </div>
         {/* right side */}
         <div className="relative top-0 right-0 sm:translate-y-[-9%] rounded-full bg-primaryColor w-full max-w-[680px] lg:order-2">
-          <div className="bg-gradient-180 from-[#33cca3] via-[#00ffbb] to-[#6bff6b] z-[1] pb-[100%] rounded-full">
+          <div className="bg-gradient-180 from-[#282548] via-[#00ffbb] to-[#6bff6b] z-[1] pb-[100%] rounded-full">
             <motion.img
               initial={{ bottom: "50px" }}
               whileInView={{ bottom: "0px" }}

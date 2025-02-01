@@ -15,13 +15,14 @@ const App = () => {
     <main className="overflow-x-hidden">
       <Header />
       <Home />
-      <Services />
       <Skills />
       <Projects />
+      {/* <Services /> */}
       <Resume />
       <Contact />
       <Footer />
       <Notification />
+      {/* <video src="" auto ></video> */}
     </main>
   );
 };

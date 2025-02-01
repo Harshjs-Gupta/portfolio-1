@@ -122,6 +122,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                required
                 className="contact__form-input bg-bgColorAlt dark:bg-containerColorDark text-titleColor dark:text-titleColorDark"
               />
             </div>
@@ -133,6 +134,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                required
                 className="contact__form-input bg-bgColorAlt dark:bg-containerColorDark text-titleColor dark:text-titleColorDark"
               />
             </div>
@@ -145,6 +147,7 @@ const Contact = () => {
             <input
               name="service"
               type="text"
+              required
               className="contact__form-input bg-bgColorAlt dark:bg-containerColorDark text-titleColor dark:text-titleColorDark"
             />
           </div>
@@ -153,10 +156,11 @@ const Contact = () => {
             <label className="contact__form-tag uppercase tracking-[0.05em] text-titleColor dark:text-titleColorDark">
               Your Message <b className="">*</b>
             </label>
-            <textarea
+            <input
               name="message"
+              required
               className="contact__form-input bg-bgColorAlt dark:bg-containerColorDark text-titleColor dark:text-titleColorDark"
-            ></textarea>
+            ></input>
           </div>
 
           <div className="grid items-center justify-center grid-cols-1 gap-4 contact__submit sm:flex sm:justify-around text-titleColor dark:text-titleColorDark">
