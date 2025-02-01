@@ -10,7 +10,7 @@ const Skills = () => {
       <h2 className="uppercase pb-5 tracking-[0.05em] text-[34px] sm:text-h1Size font-[700] text-titleColor dark:text-titleColorDark text-center">
         My Skills
       </h2>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 p-5">
         <span className="font-semibold uppercase">Frontend Development</span>
         <div className="flex flex-wrap gap-3">
           {feSkills.map((item) => (
@@ -28,7 +28,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 p-5">
         <div className="flex flex-col gap-3 pt-10">
           <span className="font-semibold uppercase">User Interface</span>
           <div className="flex flex-wrap gap-3">
