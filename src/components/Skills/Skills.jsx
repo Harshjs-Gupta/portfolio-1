@@ -11,14 +11,18 @@ const Skills = () => {
         My Skills
       </h2>
       <div className="flex flex-col gap-3 p-5">
-        <span className="font-semibold uppercase">Frontend Development</span>
+        <span className="font-semibold uppercase text-titleColor dark:text-titleColorDark">
+          Frontend Development
+        </span>
         <div className="flex flex-wrap gap-3">
           {feSkills.map((item) => (
             <div
               key={item.id}
               className="flex flex-col items-center gap-2 p-2 rounded-lg bg-bgColorAlt dark:bg-bgColorAltDark"
             >
-              <span className="text-sm font-semibold">{item.name}</span>
+              <span className="text-sm font-semibold text-titleColor dark:text-titleColorDark">
+                {item.name}
+              </span>
               {item.svg ? (
                 <img src={item.svg} alt={item.name} className="w-20 h-20" />
               ) : (
@@ -30,14 +34,18 @@ const Skills = () => {
       </div>
       <div className="flex gap-10 p-5">
         <div className="flex flex-col gap-3 pt-10">
-          <span className="font-semibold uppercase">User Interface</span>
+          <span className="font-semibold uppercase text-titleColor dark:text-titleColorDark">
+            User Interface
+          </span>
           <div className="flex flex-wrap gap-3">
             {userInterface.map((item) => (
               <div
                 key={item.id}
                 className="flex flex-col items-center gap-2 p-2 rounded-lg bg-bgColorAlt dark:bg-bgColorAltDark"
               >
-                <span className="text-sm font-semibold">{item.name}</span>
+                <span className="text-sm font-semibold text-titleColor dark:text-titleColorDark">
+                  {item.name}
+                </span>
                 {item.svg ? (
                   <img src={item.svg} alt={item.name} className="w-20 h-20" />
                 ) : (
@@ -48,14 +56,18 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex flex-col gap-3 pt-10">
-          <span className="font-semibold uppercase">Other Skills</span>
+          <span className="font-semibold uppercase text-titleColor dark:text-titleColorDark">
+            Other Skills
+          </span>
           <div className="flex flex-wrap gap-3">
             {tools.map((item) => (
               <div
                 key={item.id}
                 className="flex flex-col items-center gap-2 p-2 rounded-lg bg-bgColorAlt dark:bg-bgColorAltDark"
               >
-                <span className="text-sm font-semibold">{item.name}</span>
+                <span className="text-sm font-semibold text-titleColor dark:text-titleColorDark">
+                  {item.name}
+                </span>
                 {item.svg ? (
                   <img src={item.svg} alt={item.name} className="w-20 h-20 " />
                 ) : (

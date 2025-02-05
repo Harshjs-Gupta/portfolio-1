@@ -109,7 +109,7 @@ export const feSkills = [
 
   {
     id: 6,
-    name: "Tailwind CSS",
+    name: "Tailwind",
     svg: tailwind,
   },
   {
