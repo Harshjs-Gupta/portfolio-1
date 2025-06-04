@@ -2,6 +2,8 @@ import ezzyShop from "./assets/ezzyshop.png";
 import pixelMind from "./assets/pixelMind1.png";
 import chattify from "./assets/chattify.png";
 import portfolio from "./assets/portfolio.png";
+import dental from "./assets/dental.png";
+import vibeshift from "./assets/vibeshift.png";
 import html from "../public/html.svg";
 import css from "../public/css.svg";
 import tailwind from "../public/tailwind.svg";
@@ -169,17 +171,6 @@ export const tools = [
 export const project = [
   {
     id: 1,
-    img: pixelMind,
-    category: "Landing",
-    title: "PixelMind",
-    description:
-      "PixelMind is a landing page designed for removing the background of images. Here you can upload images and also enter image url it remove their background using AI technology and you also Download images.",
-    url: "https://pixel-mind-dev.vercel.app/",
-    sourceUrl: "https://github.com/Harshjs-Gupta/PixelMind",
-  },
-
-  {
-    id: 2,
     img: portfolio,
     category: "Portfolio",
     title: "Developer Portfolio",
@@ -188,7 +179,16 @@ export const project = [
     url: "hhttps://harsh-gupta-portfolio-dev.vercel.app/#projects",
     sourceUrl: "https://github.com/Harshjs-Gupta/portfolio-1",
   },
-
+  {
+    id: 2,
+    img: pixelMind,
+    category: "Landing",
+    title: "PixelMind",
+    description:
+      "PixelMind is a landing page designed for removing the background of images. Here you can upload images and also enter image url it remove their background using AI technology and you also Download images.",
+    url: "https://pixel-mind-dev.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/PixelMind",
+  },
   {
     id: 3,
     img: ezzyShop,
@@ -199,7 +199,6 @@ export const project = [
     url: "https://ezzy-shop-eight.vercel.app/",
     sourceUrl: "https://github.com/Harshjs-Gupta/EzzyShop",
   },
-
   {
     id: 4,
     img: chattify,
@@ -209,6 +208,26 @@ export const project = [
       "Chattify is a chatting site where you can chat with your friends and family members. Here you can create your own room and chat with your friends.",
     url: "https://chattify2.vercel.app/",
     sourceUrl: "https://github.com/Harshjs-Gupta/Chattify2",
+  },
+  {
+    id: 5,
+    img: vibeshift,
+    category: "VibeShift",
+    title: "Mood Based UI",
+    description:
+      "A fun project to experiment with face detection technology in UI. It changes the UI based on the user's emotions.",
+    url: "https://vibe-shift.vercel.app",
+    sourceUrl: "https://github.com/Harshjs-Gupta/VibeShift",
+  },
+  {
+    id: 6,
+    img: dental,
+    category: "Sakthi Dental Clinic",
+    title: "Dental Clinic Website",
+    description:
+      "It is a website for dental clinic where you see the type of dental treatment and also see the doctors and their details and book an appointment.",
+    url: "https://sakthi-dental-clinic.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/Sakthi-Dental-Clinic",
   },
 ];
 
