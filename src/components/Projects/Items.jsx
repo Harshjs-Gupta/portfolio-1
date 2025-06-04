@@ -38,7 +38,7 @@ const Items = ({ projectItems }) => {
               {description}
             </p>
 
-            <div className="flex flex-col w-3/5 gap-4">
+            <div className="flex flex-col gap-4 w-3/5">
               <a
                 href={url}
                 target="_blank"
