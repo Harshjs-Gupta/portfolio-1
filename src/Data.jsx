@@ -1,4 +1,5 @@
 import ezzyShop from "./assets/ezzyshop.png";
+import morphomind from "./assets/morphomind.png";
 import pixelMind from "./assets/pixelMind1.png";
 import chattify from "./assets/chattify.png";
 import portfolio from "./assets/portfolio.png";
@@ -16,7 +17,6 @@ import git from "../public/git.svg";
 import github from "../public/github.svg";
 import redux from "../public/redux.svg";
 import figma from "../public/figma.svg";
-import typescript from "../public/typescript1.svg";
 
 export const links = [
   {
@@ -201,6 +201,15 @@ export const project = [
   },
   {
     id: 4,
+    img: morphomind,
+    category: "AI Featured",
+    title: "Morpho Mind",
+    description: `A multi-modal AI web application that allows users to generate text, images, and videos from prompts using advanced generative models, providing a seamless creative experience.`,
+    url: "https://morpho-mind.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/MorphoMind",
+  },
+  {
+    id: 5,
     img: chattify,
     category: "Chattify",
     title: "Chatting site",
@@ -210,7 +219,7 @@ export const project = [
     sourceUrl: "https://github.com/Harshjs-Gupta/Chattify2",
   },
   {
-    id: 5,
+    id: 6,
     img: vibeshift,
     category: "VibeShift",
     title: "Mood Based UI",
@@ -220,7 +229,7 @@ export const project = [
     sourceUrl: "https://github.com/Harshjs-Gupta/VibeShift",
   },
   {
-    id: 6,
+    id: 7,
     img: dental,
     category: "Sakthi Dental Clinic",
     title: "Dental Clinic Website",
