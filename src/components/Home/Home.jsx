@@ -53,7 +53,7 @@ const Home = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://www.linkedin.com/in/harsh-gupta-b56a63265/"
+              href="https://www.linkedin.com/in/harsh-gupta-js/"
               className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-textColorDark dark:hover:text-primaryColor hover:animate-bounce"
             >
               <FaLinkedin />
