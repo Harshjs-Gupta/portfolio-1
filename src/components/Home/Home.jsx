@@ -104,7 +104,7 @@ const Home = () => {
           <div className=" uppercase absolute bottom-[-23%] right-[-4%] sm:bottom-[12%] sm:right-[6%] lg:bottom-[5%] border-[3px] border-solid border-borderColor bg-containerColor sm:shadow-[5px_5px_rgba(0,0,0,0.2)] dark:sm:shadow-[5px_5px_rgba(0,0,0,0.3)] shadow-[5px_5px_rgba(0,0,0,0.3)] dark:shadow-[5px_5px_rgba(255,255,255,0.3)] px-[5px] xs:px-[10px] sm:px-[20px] xs:w-[165px] w-[140px] sm:w-[250px] sm:h-[82px] rounded-[82px] flex items-center z-[1]">
             <span className="w-[50%] text-titleColor font-[700] text-center text-[30px] sm:text-[40px]">
               <AnimatedNumbers
-                animateToNumber="4"
+                animateToNumber="7"
                 locale="en"
                 configs={[
                   { mass: 1, tension: 220, friction: 100 },
