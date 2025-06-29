@@ -126,20 +126,20 @@ const Header = () => {
             {/* Menu Social Buttons */}
             <div className="flex gap-[20px] mb-[30px] ">
               <a
-                href="#"
+                href="https://x.com/harshgupta_js"
                 className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
                 <FaTwitter />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/harsh-gupta-js/"
                 className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
                 <FaLinkedin />
               </a>
 
               <a
-                href="#"
+                href="https://github.com/Harshjs-Gupta"
                 className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
               >
                 <FaGithub />
