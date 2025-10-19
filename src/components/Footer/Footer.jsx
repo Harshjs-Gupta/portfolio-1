@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 
 import "./Footer.css";
-import Ballpit from "../Contact/ballPit";
 
 export default function Footer() {
   return (
@@ -64,22 +63,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div
-        style={{
-          position: "absolute",
-          minHeight: "400px",
-          maxHeight: "400px",
-          width: "100%",
-        }}
-      >
-        <Ballpit
-          count={200}
-          gravity={0.7}
-          friction={0.8}
-          wallBounce={0.95}
-          followCursor={true}
-        />
-      </div>
     </>
   );
 }
