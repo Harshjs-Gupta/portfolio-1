@@ -112,7 +112,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-
+        {/* Form  */}
         <form className="contact__form" ref={form} onSubmit={sendEmail}>
           <div className="grid grid-cols-1 contact__form-group sm:grid-cols-2">
             <div className="contact__form-div">
@@ -139,10 +139,9 @@ const Contact = () => {
               />
             </div>
           </div>
-
           <div className="contact__form-div">
             <label className="contact__form-tag uppercase tracking-[0.05em] text-titleColor dark:text-titleColorDark">
-              Your Subject <b className="">*</b>
+              Your Service <b className="">*</b>
             </label>
             <input
               name="service"
