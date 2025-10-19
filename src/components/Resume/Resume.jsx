@@ -21,6 +21,7 @@ const Resume = () => {
       </p>
 
       <div className="grid gap-16 md:grid-cols-2">
+        {/* Education */}
         <div className="resume__group">
           <h3 className="text-center text-h4Size border-b-[2px] border-b-solid text-titleColor dark:text-titleColorDark border-b-borderColor dark:border-b-borderColorDark pb-[30px]">
             Education & Certificate
@@ -41,13 +42,14 @@ const Resume = () => {
             })}
           </div>
         </div>
-        {/* <div className='resume__group'>
-          <h3 className='text-center text-h4Size border-b-[2px] border-b-solid text-titleColor dark:text-titleColorDark border-b-borderColor dark:border-b-borderColorDark pb-[30px]'>
+        {/* Experiance */}
+        <div className="resume__group">
+          <h3 className="text-center text-h4Size border-b-[2px] border-b-solid text-titleColor dark:text-titleColorDark border-b-borderColor dark:border-b-borderColorDark pb-[30px]">
             Experience
           </h3>
-          <div className='resume__items'>
+          <div className="resume__items">
             {cv.map((val, id) => {
-              if (val.category === 'experience') {
+              if (val.category === "experience") {
                 return (
                   <Card
                     key={id}
@@ -55,12 +57,13 @@ const Resume = () => {
                     subtitle={val.subtitle}
                     date={val.date}
                     description={val.description}
+                    category={val.category}
                   />
                 );
               }
             })}
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
