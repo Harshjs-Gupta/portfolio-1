@@ -7,6 +7,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsMoon, BsSun } from "react-icons/bs";
 
 import "./Header.css";
+import SocialAccounts from "../../ui/SocialAccounts";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -90,7 +91,7 @@ const Header = () => {
           onClick={scrollTop}
           className="nav__logo capitalize tracking-[0.05em] dark:text-titleColorDark text-titleColor"
         >
-          My Portfolio
+          My <span className="text-[#33CCA3]">Portfolio</span>
         </Link>
         <div
           className={`${
@@ -124,27 +125,7 @@ const Header = () => {
               })}
             </ul>
             {/* Menu Social Buttons */}
-            <div className="flex gap-[20px] mb-[30px] ">
-              <a
-                href="https://x.com/harshgupta_js"
-                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/harsh-gupta-js/"
-                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
-              >
-                <FaLinkedin />
-              </a>
-
-              <a
-                href="https://github.com/Harshjs-Gupta"
-                className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-titleColorDark dark:hover:text-primaryColor hover:animate-bounce"
-              >
-                <FaGithub />
-              </a>
-            </div>
+            <SocialAccounts />
           </div>
         </div>
         <div className="nav__btns">
