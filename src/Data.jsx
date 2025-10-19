@@ -17,6 +17,9 @@ import git from "../public/git.svg";
 import github from "../public/github.svg";
 import redux from "../public/redux.svg";
 import figma from "../public/figma.svg";
+import jira from "../public/jira.svg";
+import typescript from "../public/typescript1.svg";
+import postman from "../public/postman.svg";
 
 export const links = [
   {
@@ -82,59 +85,59 @@ export const service = [
 export const feSkills = [
   {
     id: 1,
-    name: "HTML5",
-    svg: html,
+    name: "JavaScript",
+    svg: JavaScript,
   },
   {
     id: 2,
-    name: "CSS3",
-    svg: css,
+    name: "TypeScript",
+    svg: typescript,
   },
 
   {
     id: 3,
-    name: "JavaScript",
-    svg: JavaScript,
-  },
-
-  {
-    id: 4,
     name: "React.js",
     svg: react,
   },
 
   {
-    id: 5,
+    id: 4,
     name: "Next.js",
     svg: next,
   },
 
   {
-    id: 6,
+    id: 5,
     name: "Tailwind",
     svg: tailwind,
   },
+
   {
-    id: 7,
+    id: 6,
     name: "Sass",
     svg: sass,
+  },
+  {
+    id: 7,
+    name: "Redux",
+    svg: redux,
   },
 
   {
     id: 8,
-    name: "Redux",
-    svg: redux,
-  },
-  {
-    id: 9,
     name: "GSAP",
     svg: gsap,
   },
-  // {
-  //   id: 10,
-  //   name: "TypeScript",
-  //   svg: typescript,
-  // },
+  {
+    id: 9,
+    name: "HTML5",
+    svg: html,
+  },
+  {
+    id: 10,
+    name: "CSS3",
+    svg: css,
+  },
 ];
 
 export const userInterface = [
@@ -151,21 +154,21 @@ export const tools = [
     name: "Git",
     svg: git,
   },
-  // {
-  //   id: 2,
-  //   name: "Github",
-  //   svg: github,
-  // },
-  // {
-  //   id: 3,
-  //   name: "Visual Studio Code",
-  //   // svg: vsCode
-  // },
-  // {
-  //   id: 3,
-  //   name: "Github",
-  //   svg: github,
-  // },
+  {
+    id: 2,
+    name: "Github",
+    svg: github,
+  },
+  {
+    id: 3,
+    name: "Jira",
+    svg: jira,
+  },
+  {
+    id: 4,
+    name: "Postman",
+    svg: postman,
+  },
 ];
 
 export const project = [
@@ -231,7 +234,7 @@ export const project = [
   {
     id: 7,
     img: dental,
-    category: "Sakthi Dental Clinic",
+    category: "Dental Clinic",
     title: "Dental Clinic Website",
     description:
       "It is a website for dental clinic where you see the type of dental treatment and also see the doctors and their details and book an appointment.",
@@ -243,11 +246,11 @@ export const project = [
 export const cv = [
   {
     id: 1,
-    title: "D.A.V Public Shool Kusunda",
-    subtitle: "High School ",
-    date: "2015 - 2022",
+    title: "Manipal University Jaipur",
+    subtitle: "BCA. (Bachelor of Computer Application)",
+    date: "2022 - 2025",
     description:
-      "I completed my high school education at D.A.V Public School Kusunda, where I studied science and mathematics.",
+      "I completed my Bachelor of Computer Application at Manipal University Jaipur, where I studied programming, web development, and software engineering",
     category: "education",
   },
 
@@ -263,21 +266,38 @@ export const cv = [
 
   {
     id: 3,
-    title: "Manipal University Jaipur",
-    subtitle: "BCA. (Bachelor of Computer Application)",
-    date: "2022 - 2025",
+    title: "D.A.V Public Shool Kusunda",
+    subtitle: "High School ",
+    date: "2015 - 2022",
     description:
-      "I am currently pursuing a Bachelor of Computer Application at Manipal University Jaipur, where I am studying programming, web development, and software engineering",
+      "I completed my high school education at D.A.V Public School Kusunda, where I studied science and mathematics.",
     category: "education",
   },
 
   {
     id: 4,
     title: "Udemy Online Courses",
-    subtitle: "Web Development and Design",
+    subtitle: "Web Development and Frontend Development",
     date: "2022 - PRESENT",
     description:
       "I have completed several online courses on web development and design, including courses on React.js, Next.js, and JavaScript.",
     category: "education",
+  },
+  {
+    id: 5,
+    title: "Internship at Foxmula",
+    subtitle: "Frontend Developer",
+    date: "Nov 2024 - PRESENT",
+    description: [
+      `● Developed pixel-perfect, responsive web pages and reusable generic components from Figma designs, enhancing
+UI/UX quality and accelerating the team’s development speed by enabling code reusability. 
+● Collaborated closely with the backend team to integrate internal REST APIs and third-party services like Razorpay,
+improving system reliability and reducing API response time by 20%.
+● Participated in an Agile development environment using Jira for sprint planning and GitHub for version control, which
+improved task tracking efficiency and reduced development cycle time.
+● Tech Stack: React.js, Redux, Axios, SCSS, Context APIs, Material UI other npm packages.
+`,
+    ],
+    category: "experience",
   },
 ];
