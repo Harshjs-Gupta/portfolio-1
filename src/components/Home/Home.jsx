@@ -1,16 +1,15 @@
 import React from "react";
-import AnimatedNumbers from "react-animated-numbers";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
-import profileImage from "../../assets/profile-img.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
+import ExperienceBadge from "../../ui/ExperienceBadge";
+import CompletedProjectBadge from "../../ui/CompletedProjectBadge";
+import ProfileImg from "../../ui/ProfileImg";
+import SocialAccounts from "../../ui/SocialAccounts";
 
 const Home = () => {
-  const transition = { duration: 3, type: "spring" };
-
   return (
     <section
       className="flex px-8 sm:px-4 pt-[160px] sm:pt-[200px] lg:pt-[165px] justify-center bg-gradient-180 from-bgColor to-bgColorAlt overflow-x-hidden pb-[180px] sm:pb-[0px] dark:from-bgColorDark dark:to-bgColorDark scrollbar-hide"
@@ -44,32 +43,12 @@ const Home = () => {
             I am a frontend developer with a passion for creating
             high-performance and visually appealing user interfaces.
           </p>
-
-          <div className="flex gap-[20px] mb-[30px] justify-center sm:justify-start">
-            <a
-              href="https://x.com/harshgupta_js"
-              className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-textColorDark dark:hover:text-primaryColor hover:animate-bounce"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/harsh-gupta-js/"
-              className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-textColorDark dark:hover:text-primaryColor hover:animate-bounce"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/Harshjs-Gupta"
-              className="text-titleColor text-h5Size transition-all duration-75 ease-[cubic-bezier(0.3,0,0.3,1)] hover:text-primaryColor dark:text-textColorDark dark:hover:text-primaryColor hover:animate-bounce"
-            >
-              <FaGithub />
-            </a>
-          </div>
-
+          {/* Social Account */}
+          <SocialAccounts />
           <div className="flex gap-[70px] font-[700] uppercase tracking-[0.05em] items-center justify-center mx-[-40px] sm:mx-0 sm:justify-start">
             <a
               href="/HarshGuptaResume.pdf"
-              download="ResumeOfHarshGupta.pdf"
+              download="Harsh_Gupta_Resume.pdf"
               target="_blank"
               className='text-titleColor dark:text-titleColorDark text-tiny grid place-items-center border-[2px] border-solid border-borderColor dark:border-borderColorDark p-[20px] rounded-[56px] shadow-[5px_5px_rgba(0,0,0,0.2)] dark:shadow-[5px_5px_rgba(255,255,255,0.1)] relative before:content-[""] before:absolute before:inset-[2px] before:bg-primaryColor before:rounded-[56px] before:scale-[0.3] before:blur-[10px] before:opacity-0 before:transition-all before:duration-[0.6s] before:ease-[cubic-bezier(0.3,0,0.3,1)] before:z-[0] hover:before:scale-[1] hover:before:blur-0 hover:before:opacity-100'
             >
@@ -89,39 +68,12 @@ const Home = () => {
           </div>
         </div>
         {/* right side */}
-        <div className="relative top-0 right-0 sm:translate-y-[-9%] rounded-full bg-primaryColor w-full max-w-[680px] lg:order-2">
-          <div className="bg-gradient-180 from-[#282548] via-[#00ffbb] to-[#6bff6b] z-[1] pb-[100%] rounded-full">
-            <motion.img
-              initial={{ bottom: "50px" }}
-              whileInView={{ bottom: "0px" }}
-              transition={transition}
-              className="absolute sm:bottom-0 sm:h-[700px] rounded-[500px] object-cover"
-              src={profileImage}
-              alt="HeroImg"
-            />
-          </div>
-
-          <div className=" uppercase absolute bottom-[-23%] right-[-4%] sm:bottom-[12%] sm:right-[6%] lg:bottom-[5%] border-[3px] border-solid border-borderColor bg-containerColor sm:shadow-[5px_5px_rgba(0,0,0,0.2)] dark:sm:shadow-[5px_5px_rgba(0,0,0,0.3)] shadow-[5px_5px_rgba(0,0,0,0.3)] dark:shadow-[5px_5px_rgba(255,255,255,0.3)] px-[5px] xs:px-[10px] sm:px-[20px] xs:w-[165px] w-[140px] sm:w-[250px] sm:h-[82px] rounded-[82px] flex items-center z-[1]">
-            <span className="w-[50%] text-titleColor font-[700] text-center text-[30px] sm:text-[40px]">
-              <AnimatedNumbers
-                animateToNumber="7"
-                locale="en"
-                configs={[
-                  { mass: 1, tension: 220, friction: 100 },
-                  { mass: 1, tension: 180, friction: 130 },
-                  { mass: 1, tension: 280, friction: 90 },
-                  { mass: 1, tension: 180, friction: 135 },
-                  { mass: 1, tension: 260, friction: 100 },
-                  { mass: 1, tension: 210, friction: 180 },
-                ]}
-              />
-            </span>
-
-            <span className="ml-[10px] sm:ml-0 text-[10px] sm:text-[15px] leading-[1.5em] font-[700] text-titleColor">
-              Completed <span className="text-primaryColor">Projects</span>
-            </span>
-          </div>
-
+        <div className="relative top-0 sm:-top-24 right-0 sm:translate-y-[-9%] rounded-full lg:order-2">
+          <ProfileImg />
+          {/* Experience */}
+          <ExperienceBadge />
+          {/* Project completed */}
+          <CompletedProjectBadge />
           <img
             className="absolute dark:invert-[1] dark:opacity-[0.6] w-[221px] h-[211px] top-[-6%] right-[6%] z-[-1] "
             src={shapeOne}
