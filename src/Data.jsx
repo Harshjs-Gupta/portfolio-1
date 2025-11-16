@@ -2,6 +2,7 @@ import ezzyShop from "./assets/ezzyshop.png";
 import morphomind from "./assets/morphomind.png";
 import pixelMind from "./assets/pixelMind1.png";
 import chattify from "./assets/chattify.png";
+import wardrobe from "./assets/wardrobe.png";
 import portfolio from "./assets/portfolio.png";
 import dental from "./assets/dental.png";
 import vibeshift from "./assets/vibeshift.png";
@@ -184,13 +185,13 @@ export const project = [
   },
   {
     id: 2,
-    img: pixelMind,
-    category: "Landing",
-    title: "PixelMind",
+    img: wardrobe,
+    category: "Community",
+    title: "Wardrobe Exchange",
     description:
-      "PixelMind is a landing page designed for removing the background of images. Here you can upload images and also enter image url it remove their background using AI technology and you also Download images.",
-    url: "https://pixel-mind-dev.vercel.app/",
-    sourceUrl: "https://github.com/Harshjs-Gupta/PixelMind",
+      " This is a Cloths Exchange Community site where you can exchange Cloths to other in some price. In this you list your cloths and also see the others listed cloths and all.",
+    url: "https://wardrobe-exchange.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/wardrobeExchange",
   },
   {
     id: 3,
@@ -205,7 +206,7 @@ export const project = [
   {
     id: 4,
     img: morphomind,
-    category: "AI Featured",
+    category: "AI ",
     title: "Morpho Mind",
     description: `A multi-modal AI web application that allows users to generate text, images, and videos from prompts using advanced generative models, providing a seamless creative experience.`,
     url: "https://morpho-mind.vercel.app/",
@@ -213,6 +214,16 @@ export const project = [
   },
   {
     id: 5,
+    img: pixelMind,
+    category: "Landing",
+    title: "PixelMind",
+    description:
+      "PixelMind is a landing page designed for removing the background of images. Here you can upload images and also enter image url it remove their background using AI technology and you also Download images.",
+    url: "https://pixel-mind-dev.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/PixelMind",
+  },
+  {
+    id: 6,
     img: chattify,
     category: "Chattify",
     title: "Chatting site",
@@ -222,7 +233,7 @@ export const project = [
     sourceUrl: "https://github.com/Harshjs-Gupta/Chattify2",
   },
   {
-    id: 6,
+    id: 7,
     img: vibeshift,
     category: "VibeShift",
     title: "Mood Based UI",
@@ -232,7 +243,7 @@ export const project = [
     sourceUrl: "https://github.com/Harshjs-Gupta/VibeShift",
   },
   {
-    id: 7,
+    id: 8,
     img: dental,
     category: "Dental Clinic",
     title: "Dental Clinic Website",
