@@ -4,7 +4,7 @@ const List = ({ list, filterItems }) => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="flex justify-center overflow-x-scroll scrollbar-hide gap-[20px] sm:gap-[40px] mb-[60px]">
+    <div className="flex justify-center overflow-x-scroll overflow-y-hidden scrollbar-hide gap-[20px] sm:gap-[40px] mb-[60px]">
       {list.map((category, index) => {
         return (
           <button
