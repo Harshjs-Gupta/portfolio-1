@@ -4,9 +4,6 @@ import { project } from '../../Data';
 import Items from './Items';
 import List from './List';
 
-// import css
-import './Projects.css';
-
 const allNavList = ['all', ...new Set(project.map((proj) => proj.category))];
 
 const Projects = () => {

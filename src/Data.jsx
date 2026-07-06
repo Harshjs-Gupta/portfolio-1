@@ -185,13 +185,13 @@ export const project = [
   },
   {
     id: 2,
-    img: wardrobe,
-    category: "Community",
-    title: "Wardrobe Exchange",
+    img: chattify,
+    category: "Chattify",
+    title: "Chatting site",
     description:
-      " This is a Cloths Exchange Community site where you can exchange Cloths to other in some price. In this you list your cloths and also see the others listed cloths and all.",
-    url: "https://wardrobe-exchange.vercel.app/",
-    sourceUrl: "https://github.com/Harshjs-Gupta/wardrobeExchange",
+      "Chattify is a chatting site where you can chat with your friends and family members. Here you can create your own room and chat with your friends.",
+    url: "https://chattify-harsh.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/chattify",
   },
   {
     id: 3,
@@ -222,15 +222,15 @@ export const project = [
     url: "https://pixel-mind-dev.vercel.app/",
     sourceUrl: "https://github.com/Harshjs-Gupta/PixelMind",
   },
-  {
+ {
     id: 6,
-    img: chattify,
-    category: "Chattify",
-    title: "Chatting site",
+    img: wardrobe,
+    category: "Community",
+    title: "Wardrobe Exchange",
     description:
-      "Chattify is a chatting site where you can chat with your friends and family members. Here you can create your own room and chat with your friends.",
-    url: "https://chattify2.vercel.app/",
-    sourceUrl: "https://github.com/Harshjs-Gupta/Chattify2",
+      " This is a Cloths Exchange Community site where you can exchange Cloths to other in some price. In this you list your cloths and also see the others listed cloths and all.",
+    url: "https://wardrobe-exchange.vercel.app/",
+    sourceUrl: "https://github.com/Harshjs-Gupta/wardrobeExchange",
   },
   {
     id: 7,

@@ -17,14 +17,14 @@ const Items = ({ projectItems }) => {
             initial={{ opacity: 0.8, scale: 0.6 }}
             exit={{ opacity: 0.8, scale: 0.6 }}
             transition={{ duration: 0.3 }}
-            className="portfolio__items grid grid-flow-rows-5 bg-containerColor dark:bg-containerColorDark overflow-hidden text-left relative p-[30px] rounded-[20px] border-bgColorDark dark:border-bgColor border-2 border-solid dark:border-2 dark:border-solid"
+            className="grid overflow-hidden relative p-6 text-left rounded-3xl border-2 border-solid portfolio__items grid-flow-rows-5 bg-containerColor dark:bg-containerColorDark border-bgColorDark dark:border-bgColor dark:border-2 dark:border-solid"
             key={id}
           >
-            <div className="rounded-[18px] overflow-hidden">
+            <div className="overflow-hidden rounded-3xl">
               <img
                 src={img}
                 alt="portfolioImg"
-                className="portfolio__img h-[150px] sm:h-[180px] w-full object-cover align-middle transition-all duration-500 ease-[cubic-bezier(0.3,0,0.3,1)] "
+                className="hover:scale-105 h-[150px] sm:h-[180px] w-full object-cover align-middle transition-all duration-500 ease-[cubic-bezier(0.3,0,0.3,1)] "
               />
             </div>
 
